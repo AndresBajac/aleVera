@@ -1,0 +1,91 @@
+#bodySponsors{
+    margin: 0;
+    max-width: 100%;
+    background: url(../Images/pw_pattern.png);
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "header header"
+                            " nav nav"
+                            "form form"
+                            "sponsors sponsors"
+                            "footer footer";
+}
+
+.formNuevo{
+    grid-area: form;
+}
+
+section div form{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.containerPrincipal{
+    //grid-area: foto;
+    margin: 20px auto;
+    grid-gap: 20px;
+
+    &__fotoSponsor{
+        max-width: 100%;
+        max-height: 100%;    
+    }
+}
+
+
+div img{
+    max-width: 100%;
+}
+
+.formSponsor{
+    //grid-area: form;
+    display: flex;
+    align-items: center;
+}
+
+section div form fieldset legend{
+    font-size: medium;
+}
+
+.logosSponsors{
+    grid-area: sponsors;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    transition: all 2s;
+
+    &__imgCopar{
+        max-width: 100%;
+    }
+
+    &__imgSieger{
+        max-width: 100%;
+    }
+
+    &__imgTokio{
+        max-width: 100%;
+    }
+
+}
+
+
+#botonEnviar:hover{
+    transform: scale(2,2);
+    background-color: lightskyblue;
+    color:white;
+    font-size:10px;
+    border:0;
+}
+
+#botonDos:hover{
+    transform: scale(2,2);
+    background-color: lightskyblue;
+    color:white;
+    font-size:10px;
+    border:0;     
+}
+

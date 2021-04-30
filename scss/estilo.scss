@@ -1,0 +1,197 @@
+@import "calendario";
+@import "galeria";
+@import "logros";
+@import "sponsors";
+
+
+.encabezado{
+        grid-area: header;
+        max-height: 100%;
+        height: 20vh;
+        background-color: white;
+        background-image: url(../Images/paraHeader.jpg);
+        background-position: center;
+        background-size:auto;
+        background-repeat:no-repeat;
+        align-items: center;
+
+
+    &__contenedor{
+        display: flex;
+    }
+
+    &__titulo{
+        display: flex;
+        color:black;
+        font-size: 1em;
+        justify-content:left;
+        align-items: center;
+        width: 20%;
+        font-family: 'Montez', cursive;
+        width: 100%;
+        margin-left: 50px;
+    }
+}
+
+#paraNav{
+    grid-area: nav;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    grid-area: nav;
+    }
+
+#jumboInicio{
+    grid-area: jumbo;
+    text-align: center;
+    background-color:cornsilk;
+}
+
+.carta{
+    
+    &__img{
+        object-fit: cover;
+    }
+
+    &__content{
+        text-align: center;
+    }
+
+    &__titulo{
+        font-weight: bold;
+    }
+
+    &__parrafo{
+        font-family: 'Montez';
+    }
+
+
+}
+
+@mixin estilosParrafos ($colorLetra , $tamañoLetra , $espaciado) {
+    font-family: 'Montez';
+    color: $colorLetra;
+    font-size: $tamañoLetra;
+    letter-spacing: $espaciado;
+}
+
+.parrafoCard{
+    @include estilosParrafos(rgb(8, 8, 87) , 1rem, normal )
+}
+
+.paraFormulario{
+    @include estilosParrafos(rgb(9, 65, 9) , 1.1rem, normal)
+}
+
+.piePagina{
+        grid-area: footer;
+        max-height: 100%;
+        height: 20vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        background-image: none;
+
+    &__contenido{
+        color:cornsilk;
+        font-size: 1rem;
+        justify-content:center;
+        align-items: center;
+        font-family: 'Montez', cursive;
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+  
+
+    .encabezado {
+        max-height: 100%;
+        height: 20vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        background-image: none;
+
+    &__contenedor{
+        display: flex;
+    }
+
+    &__titulo {
+        display: flex;
+        color:cornsilk;
+        font-size: 1rem;
+        justify-content:center;
+        align-items: center;
+        font-family: 'Montez', cursive;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*.noticiaArg{
+        &__video{
+            width: ;
+            height: ;
+        }
+    }*/
+
+    
+}
+
+
+.similBanner{
+    display: none;
+}
+
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+    
+    .encabezado {
+        max-height: 100%;
+        height: 20vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        background-image: none;
+
+    
+
+    &__contenedor{
+        display: flex;
+    }
+
+    &__titulo {
+        display: flex;
+        color:cornsilk;
+        font-size: 1rem;
+        justify-content:center;
+        align-items: center;
+        font-family: 'Montez', cursive;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*.noticiaArg{
+        &__video{
+            width: ;
+            height: ;
+        }
+    }*/
+
+}
+
+}
+

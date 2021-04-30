@@ -1,0 +1,52 @@
+#bodyLogros{
+    margin: 0;
+    max-width: 100%;
+    background: url(../Images/pw_pattern.png);
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+
+    grid-template-areas: "header header"
+                         " nav nav"
+                         "table table"
+                         "noticia noticia"
+                         "carousel carousel"
+                         "footer footer";
+}
+
+
+
+.table{
+    grid-area: table;
+    padding-top: 50px;
+}
+
+
+
+
+.noticiaUrg {
+    grid-area: noticia;
+    text-align: center;
+
+    &__titulo{
+        text-align: center;
+        color: rgb(96, 174, 177);
+        font-size:25px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+}
+
+
+#carouselExampleControls{
+    grid-area: carousel;
+    text-align: center;
+    
+}
+
+
+.tituloGrilla{
+    @extend .noticiaUrg__titulo;
+    font-size: 20px;
+}
