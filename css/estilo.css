@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0; }
+
 #bodyCalendario {
   margin: 0;
   max-width: 100%;
@@ -6,7 +11,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header" "nav nav" "calendario calendario" "footer footer"; }
+  grid-template-areas: "header header"
+ "nav nav"
+ "calendario calendario"
+ "footer footer"; }
 
 .calendarioDep {
   grid-area: calendario;
@@ -36,7 +44,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header" "nav nav" "section section" "footer footer"; }
+  grid-template-areas: "header header"
+ "nav nav"
+ "section section"
+ "footer footer"; }
 
 .galeria {
   grid-area: section;
@@ -56,7 +67,12 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "header header" " nav nav" "table table" "noticia noticia" "carousel carousel" "footer footer"; }
+  grid-template-areas: "header header"
+ " nav nav"
+ "table table"
+ "noticia noticia"
+ "carousel carousel"
+ "footer footer"; }
 
 .table {
   grid-area: table;
@@ -85,7 +101,11 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header header" " nav nav" "form form" "sponsors sponsors" "footer footer"; }
+  grid-template-areas: "header header"
+ " nav nav"
+ "form form"
+ "sponsors sponsors"
+ "footer footer"; }
 
 .formNuevo {
   grid-area: form; }
