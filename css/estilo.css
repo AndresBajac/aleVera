@@ -155,8 +155,8 @@ img {
   background: url(../Images/pw_pattern.png);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header header" " nav nav" "form form" "sponsors sponsors" "footer footer"; }
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header header" " nav nav" "form form" "logos logos" "sponsors sponsors" "footer footer"; }
 
 .formNuevo {
   grid-area: form; }
@@ -174,6 +174,11 @@ section div form {
   .containerPrincipal__fotoSponsor {
     max-width: 100%;
     max-height: 100%; }
+
+.sponsorsUno {
+  grid-area: logos;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%; }
 
 div img {
   max-width: 100%; }

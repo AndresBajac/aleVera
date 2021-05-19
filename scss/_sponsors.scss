@@ -5,11 +5,12 @@
     display: grid;
     
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
 
     grid-template-areas: "header header"
                             " nav nav"
                             "form form"
+                            "logos logos"
                             "sponsors sponsors"
                             "footer footer";
 }
@@ -27,7 +28,6 @@ section div form{
 }
 
 .containerPrincipal{
-    //grid-area: foto;
     margin: 20px auto;
     grid-gap: 20px;
 
@@ -37,13 +37,18 @@ section div form{
     }
 }
 
+.sponsorsUno{
+    grid-area: logos;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
 
 div img{
     max-width: 100%;
 }
 
 .formSponsor{
-    //grid-area: form;
     display: flex;
     align-items: center;
 }
