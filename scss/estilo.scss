@@ -21,7 +21,7 @@
 .encabezado{
         grid-area: header;
         max-height: 100%;
-        height: auto;
+        height: 15vh;
         background-color: white;
         background-position: center;
         background-size:auto;
@@ -51,6 +51,7 @@
 .navbar-brand {
     font-family: 'Black Ops One', cursive;
     font-size: 30px;
+    padding-left: 5%;
   }
 
   nav { 
@@ -75,9 +76,20 @@ nav ul{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;  
+    color: white;
+    margin: 0;
+    font-size:1.1rem;  
 }
-
+.btn-primary{
+  background-color: rgb(235, 231, 182);
+  border-color: rgb(235, 231, 182);
+}
+.display-4{
+  font-size:5vh;
+}
+.lead{
+  font-size: x-large;
+}
 .carta{
     
     &__img{
@@ -312,6 +324,10 @@ nav ul{
     }
     
     }
+    .no-gutters{
+      padding-left: 0;
+      padding-right: 0;
+  }
 }
 
 
@@ -343,6 +359,11 @@ nav ul{
         width: 100%;
         text-align: center;
     }
+    }
+
+    .no-gutters{
+      padding-left: 0;
+      padding-right: 0;
     }
 
     }

@@ -226,7 +226,7 @@ section div form fieldset legend {
 .encabezado {
   grid-area: header;
   max-height: 100%;
-  height: auto;
+  height: 15vh;
   background-color: white;
   background-position: center;
   background-size: auto;
@@ -249,7 +249,8 @@ section div form fieldset legend {
 
 .navbar-brand {
   font-family: 'Black Ops One', cursive;
-  font-size: 30px; }
+  font-size: 30px;
+  padding-left: 5%; }
 
 nav {
   background-color: black; }
@@ -271,7 +272,19 @@ nav ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white; }
+  color: white;
+  margin: 0;
+  font-size: 1.1rem; }
+
+.btn-primary {
+  background-color: #ebe7b6;
+  border-color: #ebe7b6; }
+
+.display-4 {
+  font-size: 5vh; }
+
+.lead {
+  font-size: x-large; }
 
 .carta__img {
   object-fit: cover; }
@@ -446,7 +459,10 @@ nav ul {
       width: 100%;
       text-align: center; }
     .encabezado .similBanner {
-      display: none; } }
+      display: none; }
+  .no-gutters {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media (max-width: 768px) and (min-width: 576px) {
   .encabezado {
@@ -466,4 +482,7 @@ nav ul {
       align-items: center;
       font-family: 'Montez', cursive;
       width: 100%;
-      text-align: center; } }
+      text-align: center; }
+  .no-gutters {
+    padding-left: 0;
+    padding-right: 0; } }
