@@ -78,7 +78,8 @@ nav ul{
     background-repeat: no-repeat;
     color: white;
     margin: 0;
-    font-size:1.1rem;  
+    font-size:1.1rem;
+    border-radius: 0;  
 }
 .btn-primary{
   background-color: rgb(235, 231, 182);
@@ -91,7 +92,7 @@ nav ul{
   font-size: x-large;
 }
 .carta{
-    
+    border: none;
     &__img{
         object-fit: cover;
     }

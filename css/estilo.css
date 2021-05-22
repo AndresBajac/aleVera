@@ -103,22 +103,92 @@
 footer {
   grid-area: footer; }
 
-#grillaGaleria {
+#gridGallery {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header" "nav nav" "section section" "footer footer"; }
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  column-gap: 20px;
+  margin-top: 100px;
+  grid-template-areas: "header header header header header header header header header header header header" "nav nav nav nav nav nav nav nav nav nav nav nav" "banner banner banner banner banner banner banner banner banner banner banner banner" "images images images images images images images images images images images images" "videos videos videos videos videos videos videos videos videos videos videos videos " "footer footer footer footer footer footer footer footer footer footer footer footer"; }
 
-.galeria {
-  grid-area: section;
-  height: auto;
-  background-image: url(../Images/connectwork.png);
-  text-align: center; }
-  .galeria__fotoUno {
-    width: 100%; }
+.tituloSeccion, .galleryPhotos__title, .galleryVideos__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%; }
 
-img {
-  width: 100%; }
+.banner {
+  grid-area: banner; }
+  .banner__bannerImg {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover; }
+
+.galleryPhotos {
+  display: grid;
+  grid-area: images;
+  cursor: pointer; }
+  .galleryPhotos__title {
+    margin-left: 10%; }
+  .galleryPhotos__photo {
+    width: 100%;
+    margin: auto;
+    height: 90%; }
+
+.galleryVideos {
+  grid-area: videos;
+  grid-column-start: 2;
+  grid-column-end: 12; }
+  .galleryVideos__video {
+    width: 450px;
+    max-width: 90%;
+    height: 235px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center; }
+
+.site-footer {
+  display: grid;
+  grid-area: footer; }
+
+.modal {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 95%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */ }
+  .modal__close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s; }
+    .modal__close:hover, .modal__close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer; }
+  .modal__content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85%;
+    animation-name: zoom;
+    animation-duration: 0.6s; }
 
 #bodyLogros {
   margin: 0;
@@ -279,7 +349,8 @@ nav ul {
   background-repeat: no-repeat;
   color: white;
   margin: 0;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  border-radius: 0; }
 
 .btn-primary {
   background-color: #ebe7b6;
@@ -291,17 +362,16 @@ nav ul {
 .lead {
   font-size: x-large; }
 
-.carta__img {
-  object-fit: cover; }
-
-.carta__content {
-  text-align: center; }
-
-.carta__titulo {
-  font-weight: bold; }
-
-.carta__parrafo {
-  font-family: 'Montez'; }
+.carta {
+  border: none; }
+  .carta__img {
+    object-fit: cover; }
+  .carta__content {
+    text-align: center; }
+  .carta__titulo {
+    font-weight: bold; }
+  .carta__parrafo {
+    font-family: 'Montez'; }
 
 .parrafoCard {
   font-family: 'Montez';
