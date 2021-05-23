@@ -1,5 +1,12 @@
+@mixin photoBrightnessFilter($percent) {
+    filter: brightness($percent);
+    transition: 0.5s;
+}
+
+
 #gridGallery{
     width: 100%;
+    background: url(../Images/pw_pattern.png);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -39,13 +46,13 @@
     &__title{
         @extend .tituloSeccion;
         margin-left: 10%;
+        
     }
     &__photo{
         width: 100%;
-        margin: auto;
         height: 90%;
-
-
+        @include photoBrightnessFilter(100%);
+        margin: auto;
     }
 }
 
@@ -73,41 +80,12 @@
     grid-area: footer;
 }
 
-.modal{
-    display: none;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 5%;
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 95%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 
-    &__close{
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
 
-        &:hover, &:focus{
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    }
 
-    &__content{
-        margin: auto;
-        display: block;
-        max-width: 90%;
-        max-height: 85%;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
+
+.col img:hover{ 
+    -webkit-transform: scale(2);
+    transform: scale(2)
 }
+

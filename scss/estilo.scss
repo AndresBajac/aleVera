@@ -13,10 +13,17 @@
     padding-right: 0;
 }
 
-.banner {
-    background-color:teal;
+.bannerUno {
+    background-color: #60aeb1;
     color: white;
   }
+
+.bannerDos{
+  background-color:white;
+  color: #60aeb1;
+
+
+}
 
 .encabezado{
         grid-area: header;
@@ -69,24 +76,29 @@ nav ul{
     grid-area: nav;
     }
 
-#jumboInicio{
+.bannerInicio{
     grid-area: jumbo;
     text-align: center;
     background-image: url(../Images/atardecer.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     margin: 0;
     font-size:1.1rem;
-    border-radius: 0;  
+    border-radius: 0;
+    height: 40vh;
+    padding-top: 4%;  
 }
+
 .btn-primary{
   background-color: rgb(235, 231, 182);
   border-color: rgb(235, 231, 182);
 }
 .display-4{
-  font-size:5vh;
+  font-size:1.1rem;
+  font-weight: bold;
 }
 .lead{
   font-size: x-large;

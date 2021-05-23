@@ -19,6 +19,14 @@
     grid-area: form;
 }
 
+form{
+    text-align: center;
+    padding-left: 0px;
+}
+.tituloForm{
+    font-size: 1.5rem;
+    color: darkcyan;
+}
 section div form{
     color: black;
     font-weight: bold;

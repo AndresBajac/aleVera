@@ -105,6 +105,7 @@ footer {
 
 #gridGallery {
   width: 100%;
+  background: url(../Images/pw_pattern.png);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
@@ -132,8 +133,10 @@ footer {
     margin-left: 10%; }
   .galleryPhotos__photo {
     width: 100%;
-    margin: auto;
-    height: 90%; }
+    height: 90%;
+    filter: brightness(100%);
+    transition: 0.5s;
+    margin: auto; }
 
 .galleryVideos {
   grid-area: videos;
@@ -151,44 +154,9 @@ footer {
   display: grid;
   grid-area: footer; }
 
-.modal {
-  display: none;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 5%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 95%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */ }
-  .modal__close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s; }
-    .modal__close:hover, .modal__close:focus {
-      color: #bbb;
-      text-decoration: none;
-      cursor: pointer; }
-  .modal__content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 85%;
-    animation-name: zoom;
-    animation-duration: 0.6s; }
+.col img:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2); }
 
 #bodyLogros {
   margin: 0;
@@ -205,7 +173,8 @@ footer {
 
 .noticiaUrg {
   grid-area: noticia;
-  text-align: center; }
+  text-align: center;
+  color: #60aeb1; }
   .noticiaUrg__titulo, .tituloGrilla {
     text-align: center;
     color: #60aeb1;
@@ -230,6 +199,14 @@ footer {
 
 .formNuevo {
   grid-area: form; }
+
+form {
+  text-align: center;
+  padding-left: 0px; }
+
+.tituloForm {
+  font-size: 1.5rem;
+  color: darkcyan; }
 
 section div form {
   color: black;
@@ -294,9 +271,13 @@ section div form fieldset legend {
   padding-left: 0;
   padding-right: 0; }
 
-.banner {
-  background-color: teal;
+.bannerUno {
+  background-color: #60aeb1;
   color: white; }
+
+.bannerDos {
+  background-color: white;
+  color: #60aeb1; }
 
 .encabezado {
   grid-area: header;
@@ -340,24 +321,28 @@ nav ul {
   width: 100%;
   grid-area: nav; }
 
-#jumboInicio {
+.bannerInicio {
   grid-area: jumbo;
   text-align: center;
   background-image: url(../Images/atardecer.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   margin: 0;
   font-size: 1.1rem;
-  border-radius: 0; }
+  border-radius: 0;
+  height: 40vh;
+  padding-top: 4%; }
 
 .btn-primary {
   background-color: #ebe7b6;
   border-color: #ebe7b6; }
 
 .display-4 {
-  font-size: 5vh; }
+  font-size: 1.1rem;
+  font-weight: bold; }
 
 .lead {
   font-size: x-large; }
