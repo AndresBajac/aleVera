@@ -272,12 +272,12 @@ section div form fieldset legend {
   padding-right: 0; }
 
 .bannerUno {
-  background-color: #60aeb1;
+  background-color: teal;
   color: white; }
 
 .bannerDos {
   background-color: white;
-  color: #60aeb1; }
+  color: teal; }
 
 .encabezado {
   grid-area: header;
@@ -324,7 +324,7 @@ nav ul {
 .bannerInicio {
   grid-area: jumbo;
   text-align: center;
-  background-image: url(../Images/atardecer.jpg);
+  background-image: url(../Images/aleAustria.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ nav ul {
   margin: 0;
   font-size: 1.1rem;
   border-radius: 0;
-  height: 40vh;
+  height: 85vh;
   padding-top: 4%; }
 
 .btn-primary {
