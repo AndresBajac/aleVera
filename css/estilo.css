@@ -131,8 +131,7 @@ footer {
 
 .galleryPhotos {
   display: grid;
-  grid-area: images;
-  cursor: pointer; }
+  grid-area: images; }
   .galleryPhotos__title {
     margin-left: 10%; }
   .galleryPhotos__photo {
@@ -224,6 +223,9 @@ section div form {
   grid-area: logos;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%; }
+
+.logoAara {
+  width: 100%; }
 
 div img {
   max-width: 100%; }
