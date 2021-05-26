@@ -13,7 +13,8 @@
   grid-template-columns: 100%;
   height: auto;
   font-family: ´Montserrat´;
-  display: block; }
+  display: block;
+  z-index: -1; }
   .calendarioDep__titulo {
     text-align: center;
     color: #60aeb1;
@@ -71,7 +72,7 @@
   margin-right: 0 !important; }
 
 .wrapper {
-  width: 980px;
+  width: auto;
   margin: 30px auto;
   position: relative; }
 
@@ -113,7 +114,7 @@ footer {
   margin-top: 100px;
   grid-template-areas: "header header header header header header header header header header header header" "nav nav nav nav nav nav nav nav nav nav nav nav" "banner banner banner banner banner banner banner banner banner banner banner banner" "images images images images images images images images images images images images" "videos videos videos videos videos videos videos videos videos videos videos videos " "footer footer footer footer footer footer footer footer footer footer footer footer"; }
 
-.tituloSeccion, .galleryPhotos__title, .galleryVideos__title {
+.tituloSeccion, .galleryVideos__title {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10%; }
@@ -134,8 +135,6 @@ footer {
   .galleryPhotos__photo {
     width: 100%;
     height: 90%;
-    filter: brightness(100%);
-    transition: 0.5s;
     margin: auto; }
 
 .galleryVideos {
@@ -154,10 +153,6 @@ footer {
   display: grid;
   grid-area: footer; }
 
-.col img:hover {
-  -webkit-transform: scale(2);
-  transform: scale(2); }
-
 #bodyLogros {
   margin: 0;
   max-width: 100%;
@@ -169,7 +164,8 @@ footer {
 
 .table {
   grid-area: table;
-  padding-top: 50px; }
+  padding-top: 50px;
+  z-index: -1; }
 
 .noticiaUrg {
   grid-area: noticia;
@@ -212,12 +208,12 @@ section div form {
   color: black;
   font-weight: bold;
   display: flex;
-  justify-content: center;
-  padding-left: 50px; }
+  justify-content: center; }
 
 .containerPrincipal {
   margin: 20px auto;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  z-index: -1; }
   .containerPrincipal__fotoSponsor {
     max-width: 100%;
     max-height: 100%; }
@@ -248,6 +244,9 @@ section div form fieldset legend {
     max-width: 100%; }
   .logosSponsors__imgTokio {
     max-width: 100%; }
+
+fieldset {
+  z-index: -1; }
 
 #botonEnviar:hover {
   transform: scale(2, 2);

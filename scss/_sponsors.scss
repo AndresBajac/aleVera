@@ -32,12 +32,12 @@ section div form{
     font-weight: bold;
     display: flex;
     justify-content: center;
-    padding-left: 50px;
 }
 
 .containerPrincipal{
     margin: 20px auto;
     grid-gap: 20px;
+    z-index: -1;
 
     &__fotoSponsor{
         max-width: 100%;
@@ -83,6 +83,10 @@ section div form fieldset legend{
         max-width: 100%;
     }
 
+}
+
+fieldset{
+z-index: -1;
 }
 
 
