@@ -37,7 +37,6 @@ section div form{
 .containerPrincipal{
     margin: 20px auto;
     grid-gap: 20px;
-    z-index: -1;
 
     &__fotoSponsor{
         max-width: 100%;
@@ -59,8 +58,13 @@ div img{
 .formSponsor{
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
+.contenedorForm{
+    width: 100%;
+    text-align: center;
+}
 section div form fieldset legend{
     font-size: medium;
 }
@@ -85,9 +89,6 @@ section div form fieldset legend{
 
 }
 
-fieldset{
-z-index: -1;
-}
 
 
 #botonEnviar:hover{
