@@ -14,14 +14,16 @@
                             "footer footer";
 }
 
-
+#paraNav{
+    z-index: 1;
+}
 .calendarioDep{
     grid-area: calendario;
     grid-template-columns: 100%;
     height: auto;
     font-family: ´Montserrat´;
     display: block;
-    z-index: -1;
+
 
 
     &__titulo{
@@ -29,7 +31,8 @@
         color: rgb(96, 174, 177);
         font-size:25px;
         font-family: 'Open Sans Condensed', sans-serif;
-        width: 100%;    
+        width: 100%;
+        z-index: -1;
     }
 
     &__parrafo{

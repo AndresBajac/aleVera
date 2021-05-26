@@ -8,19 +8,22 @@
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header header" "nav nav" "calendario calendario" "contador contador" "footer footer"; }
 
+#paraNav {
+  z-index: 1; }
+
 .calendarioDep {
   grid-area: calendario;
   grid-template-columns: 100%;
   height: auto;
   font-family: ´Montserrat´;
-  display: block;
-  z-index: -1; }
+  display: block; }
   .calendarioDep__titulo {
     text-align: center;
     color: #60aeb1;
     font-size: 25px;
     font-family: 'Open Sans Condensed', sans-serif;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
   .calendarioDep__parrafo {
     color: black;
     line-height: 30px;
